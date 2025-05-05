@@ -13,7 +13,7 @@ mysql = MySQL(app)
 
 @app.route('/')
 def index():
-    # MySQL থেকে গরুর তথ্য নেওয়া
+ 
     cur = mysql.connection.cursor()
     cur.execute("SELECT * FROM cows")
     cows = cur.fetchall()
