@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #28a745; /* হালকা সবুজ রঙ */
+}
+
+.navbar a {
+    color: white !important;
+}
+
+/* Banner section styling */
+.banner {
+    background-color: #a77428; /* সবুজ রঙ */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Banner Text Styling */
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+/* Button Styling */
+.banner .btn {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #ac5f00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.1s ease;
+}
+
+.banner .btn:hover {
+    background-color: #ff9800;
+}
+
+/* Our Cows Section */
+#our-cows {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#why-choose-us .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-item {
+    margin-bottom: 15px;
+}
+
+.footer-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1c40f; /* Yellow color for headings */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-item i {
+    margin-right: 10px;
+    color: #f1c40f; /* yellow color for icons */
+}
+
+/* Add color transition for hover effect */
+footer .footer-item:hover {
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f1c40f;
+}
+
+/* Responsive Design: Stack columns on smaller screens */
+@media (max-width: 767px) {
+    .footer-item h5 {
+        font-size: 16px;
+    }
+    .footer-item p {
+        font-size: 12px;
+    }
+}
+
+/* Update for the .choose-us-item */
+.choose-us-item {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 15px; /* Added top padding to space out text */
+    padding-bottom: 15px; /* Added bottom padding */
+    margin-bottom: 20px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.choose-us-item:hover {
+    border-left: 4px solid #28a745;
+    background-color: #f1f8f4;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjusting margins for better text alignment */
+.choose-us-item h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.choose-us-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0; /* Adjusted top margin */
+    margin-bottom: 0; /* Removed bottom margin to eliminate unwanted spacing */
+    line-height: 1.6; /* Adjusted line-height for better spacing between lines */
+}
+
+/* Ensure consistency in text margins */
+.choose-us-item .round-point {
+    width: 45px;
+    height: 45px;
+    background-color: #f8d210;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Updated hover effect */
+.choose-us-item .round-point:hover {
+    background-color: #ff5733;
+}
+
+/* Specific point color and adjustments */
+.choose-us-item:nth-child(1) .round-point {
+    background-color: #f8d210;
+}
+
+.choose-us-item:nth-child(2) .round-point {
+    background-color: #00bcd4;
+}
+
+.choose-us-item:nth-child(3) .round-point {
+    background-color: #ff9800;
+}
+
+.choose-us-item:nth-child(4) .round-point {
+    background-color: #4caf50;
+}
